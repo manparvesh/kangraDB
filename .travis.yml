@@ -12,3 +12,6 @@ install:
 script:
   - coverage run setup.py test
   - codecov
+
+notifications:
+  email: false

@@ -106,3 +106,6 @@ venv.bak/
 .idea/
 venv2.7/
 venv3.6/
+
+# kangraDB files
+*.kng
