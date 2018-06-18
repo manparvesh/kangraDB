@@ -86,6 +86,12 @@ class TestKangraDB(TestCase):
         self.assertEqual(3, result.exit_code)
         self.assertEqual("Key not found\n", output_string)
 
+        result = self.runner.invoke(cli, ['query', db_name, 'set', 'pappu4'])
+        self.assertEqual(5, result.exit_code)
+
+        result = self.runner.invoke(cli, ['query', db_name, 'ssssset', 'pappu4'])
+        self.assertEqual(2, result.exit_code)
+
         self.assertTrue(Path(file_name).is_file())
 
         # clean up

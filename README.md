@@ -29,7 +29,6 @@ Key not found
 ```
 
 ## TODO
-- More tests
 - REST API
 - specify storage file location
 - consistent data reading
